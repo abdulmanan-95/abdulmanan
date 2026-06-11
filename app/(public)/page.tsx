@@ -58,7 +58,7 @@ export default async function HomePage() {
       <section className="py-16">
         <h2 className="text-3xl font-bold mb-8 text-center">Featured Projects</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {featuredProjects.map((project) => (
+          featuredProjects.map((project: any) => (
             <Card key={project._id} className="hover:shadow-lg transition-shadow">
               <CardHeader>
                 <CardTitle>{project.title}</CardTitle>
